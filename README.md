@@ -35,28 +35,6 @@ Simple Timer is a mobile application built with **Next.js**, **React**, **Capaci
 - **Language**: TypeScript
 - **Platform**: Android (primary), Web (development)
 
-## Project Structure
-
-```
-capacitor/
-├── app/                          # Next.js app directory
-│   ├── components/               # React components
-│   │   ├── TimerDisplay.tsx      # Timer display component
-│   │   ├── TimerControls.tsx     # Control buttons component
-│   │   └── HistoryList.tsx       # History list component
-│   ├── hooks/                    # Custom React hooks
-│   │   └── useTimer.ts           # Main timer logic and state management
-│   ├── globals.css               # Global styles
-│   ├── layout.tsx                # App layout and metadata
-│   └── page.tsx                  # Main app component
-├── android/                      # Android platform files
-├── public/                       # Static assets
-├── capacitor.config.ts           # Capacitor configuration
-├── next.config.ts                # Next.js configuration
-├── package.json                  # Dependencies and scripts
-└── README.md                     # This file
-```
-
 ## Installation & Setup
 
 ### Prerequisites
@@ -176,42 +154,27 @@ npx cap open android          # Open Android project in Android Studio
 npx cap run android           # Build and run on Android device
 ```
 
-## Testing & Validation
-
-### Functional Testing
-
-- [x] Timer starts and counts accurately
-- [x] Pause functionality works correctly
-- [x] Reset saves current time to history
-- [x] State persistence across app restarts
-- [x] History display and navigation
-- [x] Responsive design on different screen sizes
-
-### Performance Testing
-
-- [x] Smooth timer updates (1-second intervals)
-- [x] Fast app startup with state restoration
-- [x] Efficient storage operations
-- [x] Minimal battery usage
-
 ## Screenshots
 
 The application has been tested and verified to work on both web and Android platforms. Below are screenshots demonstrating the key features of the Simple Timer application.
 
-### Main Timer Interface
-
-![Timer Main Screen](./image/Untitled1.jpg)
-_Main timer interface showing the clean, responsive design with large timer display and intuitive control buttons. The interface displays the current time count and status indicator._
-
-### History Screen
-
-![History Screen](./image/Untitled2.jpg)
-_History screen displaying all previous timer reset sessions with timestamps. Users can view their complete timer usage history with detailed time records._
-
-### Running Timer with Statistics
-
-![Timer Statistics](./image/Untitled3.jpg)
-_Timer in active state showing real-time counting with additional statistics including recent resets, total sessions, and longest recorded time._
+<div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; gap: 20px; margin: 20px 0;">
+  <div style="flex: 1; text-align: center; min-width: 300px;">
+    <img src="./image/Untitled1.jpg" alt="Timer Main Screen" style="width: 100%; max-width: 400px; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h4>Main Timer Interface</h4>
+    <p><em>Clean, responsive design with large timer display and intuitive control buttons. Shows current time count and status indicator.</em></p>
+  </div>
+  <div style="flex: 1; text-align: center; min-width: 300px;">
+    <img src="./image/Untitled2.jpg" alt="History Screen" style="width: 100%; max-width: 400px; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h4>History Screen</h4>
+    <p><em>Displays all previous timer reset sessions with timestamps. Complete timer usage history with detailed time records.</em></p>
+  </div>
+  <div style="flex: 1; text-align: center; min-width: 300px;">
+    <img src="./image/Untitled3.jpg" alt="Timer Statistics" style="width: 100%; max-width: 400px; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h4>Running Timer with Statistics</h4>
+    <p><em>Active timer showing real-time counting with statistics including recent resets, total sessions, and longest recorded time.</em></p>
+  </div>
+</div>
 
 ### Features Demonstrated:
 
@@ -222,39 +185,6 @@ _Timer in active state showing real-time counting with additional statistics inc
 5. **Mobile Optimization**: Touch-friendly interface optimized for mobile devices
 6. **Real-time Updates**: Smooth second-by-second timer progression
 7. **Statistics Overview**: Quick access to usage analytics and session data
-
-## Future Enhancements
-
-- [ ] Custom timer presets (Pomodoro, etc.)
-- [ ] Sound notifications
-- [ ] Export history data
-- [ ] Timer labels and categories
-- [ ] Background operation optimization
-
-## Technical Notes
-
-### Storage Strategy
-
-The application uses Capacitor Preferences plugin which provides:
-
-- Cross-platform storage (Android SharedPreferences, iOS UserDefaults)
-- Automatic JSON serialization/deserialization
-- Asynchronous operations for better performance
-
-### Timer Accuracy
-
-- Uses JavaScript `setInterval()` with 1000ms intervals
-- State is updated immediately on user actions
-- Persistent storage ensures accuracy across app sessions
-
-### Responsive Design
-
-- Mobile-first approach with TailwindCSS
-- Adaptive layouts for different screen sizes
-- Touch-friendly button sizes and spacing
-- Dark mode support for better usability
-
----
 
 ## Development Log
 
