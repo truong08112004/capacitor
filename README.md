@@ -158,23 +158,10 @@ npx cap run android           # Build and run on Android device
 
 The application has been tested and verified to work on both web and Android platforms. Below are screenshots demonstrating the key features of the Simple Timer application.
 
-<div style="display: flex; justify-content: space-around; align-items: flex-start; flex-wrap: wrap; gap: 20px; margin: 20px 0;">
-  <div style="flex: 1; text-align: center; min-width: 300px;">
-    <img src="./image/Untitled1.jpg" alt="Timer Main Screen" style="width: 100%; max-width: 400px; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <h4>Main Timer Interface</h4>
-    <p><em>Clean, responsive design with large timer display and intuitive control buttons. Shows current time count and status indicator.</em></p>
-  </div>
-  <div style="flex: 1; text-align: center; min-width: 300px;">
-    <img src="./image/Untitled2.jpg" alt="History Screen" style="width: 100%; max-width: 400px; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <h4>History Screen</h4>
-    <p><em>Displays all previous timer reset sessions with timestamps. Complete timer usage history with detailed time records.</em></p>
-  </div>
-  <div style="flex: 1; text-align: center; min-width: 300px;">
-    <img src="./image/Untitled3.jpg" alt="Timer Statistics" style="width: 100%; max-width: 400px; border: 2px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <h4>Running Timer with Statistics</h4>
-    <p><em>Active timer showing real-time counting with statistics including recent resets, total sessions, and longest recorded time.</em></p>
-  </div>
-</div>
+|                                                      Main Timer Interface                                                       |                                                    History Screen                                                    |                                                Running Timer with Statistics                                                |
+| :-----------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------: |
+|                                           ![Timer Main Screen](./image/Untitled1.jpg)                                           |                                       ![History Screen](./image/Untitled2.jpg)                                       |                                         ![Timer Statistics](./image/Untitled3.jpg)                                          |
+| Clean, responsive design with large timer display and intuitive control buttons. Shows current time count and status indicator. | Displays all previous timer reset sessions with timestamps. Complete timer usage history with detailed time records. | Active timer showing real-time counting with statistics including recent resets, total sessions, and longest recorded time. |
 
 ### Features Demonstrated:
 
